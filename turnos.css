@@ -1,0 +1,73 @@
+.encabezado a:link { font-weight: bold; font-size: 14px; text-decoration: none; color: white }
+.encabezado a:visited { font-weight: bold; font-size: 14px; text-decoration: none; color: white }
+.encabezado a:hover {color: #e7a500}
+
+.menu a:link { font-weight: bold; font-size: 15px; text-decoration: none; color: black }
+.menu a:visited { font-weight: bold; font-size: 15px; text-decoration: none; color: black }
+.menu a:hover {color: #e7a500}
+
+.header-reporte a:link { font-weight: bold; font-size: 12px; color: BLACK; background-color: #ffaa00 }
+.header-reporte a:visited { font-weight: bold; font-size: 12px; color: BLACK; background-color: #ffaa00 }
+.header-reporte { font-weight: bold; font-size: 12px; color: BLACK; background-color: #ffaa00 }
+.header-filtro { font-weight: bold; font-size: 16px; text-decoration: none; color: BLACK}
+.fin-reporte {background-color: black; font-weight: bold; color: WHITE; font-size: 12px}
+.mensajeCentral { font-weight: bold; font-size: 14px; text-decoration: none; color: white; background-color: BLACK }
+
+.calendario a:link { font-weight: bold; font-size: 12px; color: BLACK}
+.calendario a:visited { font-weight: bold; font-size: 12px; color: BLACK}
+.calendario a:hover { font-weight: bold; color: #e7a500 }
+
+.row0 {background-color: #e4e4e4; color: black; font-family: "Trebuchet MS"; font-size: 12px}
+.row1 {background-color: WHITE; color: black; font-family: "Trebuchet MS"; font-size: 12px}
+
+.barraTitulos{background-color: black;color: white; font-weight: bold;}
+
+.graficaLink a:link { font-weight: bold; font-size: 16px; text-decoration: underline; color: black }
+.graficaLink a:visited { font-weight: bold; font-size: 16px; text-decoration: underline; color: black }
+.graficaLink a:hover {color: #e7a500}
+
+a:link { font-weight: bold; font-size: inherit; text-decoration: none; color: #EF0000 }
+a:visited { font-weight: bold; font-size: inherit; text-decoration: none; color: #EF0000 }
+a:hover {color: #EF0000; font-weight: bold;text-decoration: underline;}
+
+.estadoPI0 {background-color: #269F94; color: WHITE}
+.estadoET0 {background-color: inherit;}
+.estadoII0 {background-color: #4145EB; color: WHITE}
+.estadoPI1 {background-color: #B9EEE9;}
+.estadoET1 {background-color: inherit;}
+.estadoII1 {background-color: #D1D2FA; }
+
+.boton {background-image: url(imagenes_sape/degradado_botones.gif); font-weight: bold;}
+.texto {background-image: url(imagenes_sape/degradado_textos.gif)}
+
+.fondo2 {background-color: #ffaa00;}
+
+.linkBlanco a:link { font-weight: normal; font-size: inherit; text-decoration: underline; color: WHITE }
+.linkBlanco a:visited { font-weight: normal; font-size: inherit; text-decoration: underline; color: WHITE }
+.linkBlanco a:hover {color: WHITE; font-weight: bold;}
+
+.fuentePequena {background-color: inherit; color: black; font-family: "Trebuchet MS"; font-size: 10px}
+
+.loginStyle {
+        float:center;
+        background-color:white;
+        color:red;
+        -moz-border-radius-topleft: 15px;
+        border-right: solid red 2px;
+        border-left: solid red 10px;
+        border-top: solid red 2px;
+        border-bottom: solid red 2px;
+        width:220px;
+        padding:8px;
+        margin-bottom:10px;
+}
+
+
+.exampleDIV { 
+  border: 1px solid #80ff80;
+  background: #f0fff0;
+  color: white;
+  margin: 1em 15%;
+  padding: 0.5em;
+  \-moz-border-radius:2em;
+}

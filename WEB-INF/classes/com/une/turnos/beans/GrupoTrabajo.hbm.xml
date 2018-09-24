@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.une.turnos.beans.GrupoTrabajo"
+        table="grupos_trabajo"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="int"
+            unsaved-value="-1"
+        >
+            <generator class="sequence">
+                <param name="sequence">gen_id_grupos</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-GrupoTrabajo.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="descripcion"
+            type="string"
+            update="true"
+            insert="true"
+            column="descripcion"
+        />
+
+        <property
+            name="subdireccionId"
+            type="int"
+            update="true"
+            insert="true"
+            column="subdireccion"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-GrupoTrabajo.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

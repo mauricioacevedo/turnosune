@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<!-- Generated file - Do not edit! -->
+
+<hibernate-configuration>
+
+	<!-- a SessionFactory instance listed as /jndi/name -->
+	<session-factory>
+
+		<!-- properties -->
+		<property name="dialect">net.sf.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">false</property>
+		<property name="use_outer_join">false</property>
+			<property name="connection.username">postgres</property>
+			<property name="connection.password">Animo</property>
+			<property name="connection.driver_class">org.postgresql.Driver</property>
+			<property name="connection.url">jdbc:postgresql://10.65.83.61/turnosune</property>
+
+		<!-- mapping files -->
+		<mapping resource="com/une/turnos/beans/Turno.hbm.xml"/>
+		<mapping resource="com/une/turnos/beans/HistoricoGeneral.hbm.xml"/>
+		<mapping resource="com/une/turnos/beans/ListasCorreo.hbm.xml"/>
+		<mapping resource="com/une/turnos/beans/HistoricoTurnos.hbm.xml"/>
+		<mapping resource="com/une/turnos/beans/GrupoTrabajo.hbm.xml"/>
+		<mapping resource="com/une/turnos/beans/Usuario.hbm.xml"/>
+	</session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.une.turnos.beans.Turno"
+        table="turnos"
+    >
+
+        <id
+            name="id2"
+            column="id2"
+            type="int"
+            unsaved-value="-1"
+        >
+            <generator class="sequence">
+                <param name="sequence">gen_id_turnos</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Turno.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="mostrar_turno_domingo"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="mostrar_turno_domingo"
+        />
+
+        <property
+            name="grupoId"
+            type="int"
+            update="true"
+            insert="true"
+            column="grupo_id"
+        />
+
+        <property
+            name="id"
+            type="string"
+            update="true"
+            insert="true"
+            column="id"
+        />
+
+        <property
+            name="dias"
+            type="string"
+            update="true"
+            insert="true"
+            column="dias"
+        />
+
+        <property
+            name="horas"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas"
+        />
+
+        <property
+            name="labores"
+            type="string"
+            update="true"
+            insert="true"
+            column="labores"
+        />
+
+        <property
+            name="estado"
+            type="int"
+            update="true"
+            insert="true"
+            column="estado"
+        />
+
+        <property
+            name="descansoSemana"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_semana"
+        />
+
+        <property
+            name="horasSabado"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas_sabado"
+        />
+
+        <property
+            name="descansoSabado"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_sabado"
+        />
+
+        <property
+            name="horasDomingo"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas_domingo"
+        />
+
+        <property
+            name="descansoDomingo"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_domingo"
+        />
+
+        <property
+            name="laboresFinDeSemana"
+            type="string"
+            update="true"
+            insert="true"
+            column="labores_fin_semana"
+        />
+
+        <property
+            name="tipo_turno"
+            type="string"
+            update="true"
+            insert="true"
+            column="tipo_turno"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Turno.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

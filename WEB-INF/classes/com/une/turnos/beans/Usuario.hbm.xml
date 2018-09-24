@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.une.turnos.beans.Usuario"
+        table="usuarios"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="int"
+            unsaved-value="-1"
+        >
+            <generator class="sequence">
+                <param name="sequence">gen_id_usuarios</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Usuario.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="novedad_excluyente"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="novedad_excluyente"
+        />
+
+        <property
+            name="grupos_admin"
+            type="string"
+            update="true"
+            insert="true"
+            column="grupos_admin"
+        />
+
+        <property
+            name="registro"
+            type="string"
+            update="true"
+            insert="true"
+            column="registro"
+        />
+
+        <property
+            name="grupoId"
+            type="int"
+            update="true"
+            insert="true"
+            column="grupo_id"
+        />
+
+        <property
+            name="nombre"
+            type="string"
+            update="true"
+            insert="true"
+            column="nombre"
+        />
+
+        <property
+            name="rotacion"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="rotacion"
+        />
+
+        <property
+            name="turno"
+            type="int"
+            update="true"
+            insert="true"
+            column="turno_id"
+        />
+
+        <property
+            name="nick"
+            type="string"
+            update="true"
+            insert="true"
+            column="nick"
+        />
+
+        <property
+            name="nivel"
+            type="string"
+            update="true"
+            insert="true"
+            column="nivel"
+        />
+
+        <property
+            name="passwd"
+            type="string"
+            update="true"
+            insert="true"
+            column="passwd"
+        />
+
+        <property
+            name="novedad"
+            type="string"
+            update="true"
+            insert="true"
+            column="novedad"
+        />
+
+        <property
+            name="turnoSecundario"
+            type="int"
+            update="true"
+            insert="true"
+            column="turno_secundario"
+        />
+
+        <property
+            name="participa_pool"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="participa_pool"
+        />
+
+        <property
+            name="turno_pool"
+            type="string"
+            update="true"
+            insert="true"
+            column="turno_pool"
+        />
+
+        <property
+            name="horas_pool_domingo"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas_pool_domingo"
+        />
+
+        <property
+            name="descanso_pool_domingo"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_pool_domingo"
+        />
+
+        <property
+            name="declina_pool"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="declina_pool"
+        />
+
+        <property
+            name="descripcion_novedad"
+            type="string"
+            update="true"
+            insert="true"
+            column="descripcion_novedad"
+        />
+
+        <property
+            name="subdireccionId"
+            type="int"
+            update="true"
+            insert="true"
+            column="subdireccion"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Usuario.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

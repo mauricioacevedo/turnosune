@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="com.une.turnos.beans.HistoricoTurnos"
+        table="hitorico_turnos"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="int"
+            unsaved-value="-1"
+        >
+            <generator class="sequence">
+                <param name="sequence">gen_id_historico_turnos</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-HistoricoTurnos.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="registro"
+            type="string"
+            update="true"
+            insert="true"
+            column="registro_usuario"
+        />
+
+        <property
+            name="turnoId2"
+            type="int"
+            update="true"
+            insert="true"
+            column="turno_id2"
+        />
+
+        <property
+            name="turnoId"
+            type="string"
+            update="true"
+            insert="true"
+            column="turno_id"
+        />
+
+        <property
+            name="labores"
+            type="string"
+            update="true"
+            insert="true"
+            column="labores"
+        />
+
+        <property
+            name="year"
+            type="string"
+            update="true"
+            insert="true"
+            column="year"
+        />
+
+        <property
+            name="semana"
+            type="string"
+            update="true"
+            insert="true"
+            column="semana"
+        />
+
+        <property
+            name="novedad"
+            type="string"
+            update="true"
+            insert="true"
+            column="novedad"
+        />
+
+        <property
+            name="dias"
+            type="string"
+            update="true"
+            insert="true"
+            column="dias"
+        />
+
+        <property
+            name="horas_semana"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas_semana"
+        />
+
+        <property
+            name="descanso_semana"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_semana"
+        />
+
+        <property
+            name="horas_sabado"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas_sabado"
+        />
+
+        <property
+            name="descanso_sabado"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_sabado"
+        />
+
+        <property
+            name="horas_domingo"
+            type="string"
+            update="true"
+            insert="true"
+            column="horas_domingo"
+        />
+
+        <property
+            name="descanso_domingo"
+            type="string"
+            update="true"
+            insert="true"
+            column="descanso_domingo"
+        />
+
+        <property
+            name="grupo_id"
+            type="int"
+            update="true"
+            insert="true"
+            column="grupo_id"
+        />
+
+        <property
+            name="usuario"
+            type="int"
+            update="true"
+            insert="true"
+            column="usuario"
+        />
+
+        <property
+            name="descripcionNovedad"
+            type="string"
+            update="true"
+            insert="true"
+            column="descripcion_novedad"
+        />
+
+        <property
+            name="nombreUsuario"
+            type="string"
+            update="true"
+            insert="true"
+            column="nombre_usuario"
+        />
+
+        <property
+            name="deacripcionGrupo"
+            type="string"
+            update="true"
+            insert="true"
+            column="descripcion_grupo"
+        />
+
+        <property
+            name="subdireccion"
+            type="int"
+            update="true"
+            insert="true"
+            column="subdireccion"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-HistoricoTurnos.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

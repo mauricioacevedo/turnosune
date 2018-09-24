@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+
+	<index-page destiny="index.jsp" />
+	<!--index-page destiny="servlet/com.osp.sape.servlets.PruebaTelefonoServlet" /-->
+	<restricted-page destiny="/restrictedPage.jsp" />
+	<login-page destiny="/index.jsp" />
+	<default-rol value="visitante" /> 
+	<actions>
+		<action name="inicio" destiny="servlet/com.une.turnos.servlets.InicioServlet" />
+		<action name="salir" destiny="servlet/com.une.turnos.servlets.InicioServlet" />
+		<action name="gestorUsuarios" destiny="servlet/com.une.turnos.servlets.GestionUsuariosServlet">
+			<role>2</role> <!-- administrador -->
+			<role>3</role> <!-- supervisor -->
+		</action>
+		<action name="gestorTurnos" destiny="servlet/com.une.turnos.servlets.GestionTurnosServlet">
+			<role>1</role> <!-- usuario normal -->
+			<role>2</role> <!-- administrador -->
+			<role>3</role> <!-- supervisor -->
+		</action>
+		<action name="asignadorTurnos" destiny="servlet/com.une.turnos.servlets.AsignacionTurnosServlet">
+			<role>2</role> <!-- administrador -->
+			<role>3</role> <!-- supervisor -->
+		</action>
+		
+		<action name="gestorReportes" destiny="servlet/com.une.turnos.servlets.ReportesServlet">
+			<role>1</role> <!-- usuario normal -->
+			<role>3</role> <!-- supervisor -->
+			<role>0</role> <!-- Usuario de Consultas -->
+		</action>
+		
+		<action name="parametros" destiny="servlet/com.une.turnos.servlets.ParametrosServlet">
+		</action>
+		
+	</actions>
+
+
+
+
+	<templates>
+		
+		<template name="loginError">/index.jsp</template>
+		
+		
+		<!-- AsignacionTurnosServlet -->
+		<template name="inicioAsignacionTurnos">/turnos/inicioAsignacionTurnos.jsp</template>
+		<template name="inicioNovedad">/turnos/inicioNovedad.jsp</template>
+		
+		<!--GestionTurnosServlet -->
+		<template name="inicioTurnos">/turnos/inicioTurnos.jsp</template>
+		<template name="nuevoTurno">/turnos/nuevoTurno.jsp</template>
+		<template name="definirDescanso">/turnos/definirDescanso.jsp</template>
+		<template name="simuladorTurnos">/turnos/simuladorTurnos.jsp</template>
+		<template name="modificarTurnoHistorico">/turnos/modificacionTurnoHistorico.jsp</template>
+		<template name="definirDescansoHistorial">/turnos/definirDescansoHistorial.jsp</template>
+		
+		<!--GestionUsuariosServlet -->
+		<template name="inicioUsuarios">/usuarios/inicioUsuarios.jsp</template>
+		<template name="nuevoUsuario">/usuarios/nuevoUsuario.jsp</template>
+		<template name="inicioGruposTrabajo">/usuarios/inicioGruposTrabajo.jsp</template>
+		<template name="nuevoGrupo">/usuarios/nuevoGrupo.jsp</template>
+		<template name="ventanaAsignacionUsuariosGrupos">/usuarios/ventanaAsignacionUsuariosGrupos.jsp</template>
+		<template name="ventanaAsignacionTurnosGrupos">/usuarios/ventanaAsignacionTurnosGrupos.jsp</template>
+		
+		<!-- ReportesServlet -->
+		<template name="inicioReportes">/reportes/inicioReportes.jsp</template>		
+		<template name="definirHorario">/reportes/definirHorario.jsp</template>
+		<template name="modificarInfoDisponible">/reportes/modificarInfoDisponible.jsp</template>
+		<template name="mostrarHorario">/reportes/mostrarHorario.jsp</template>
+		<template name="mallaTurnos">/reportes/mallaTurnos.jsp</template>
+		<template name="historialTurnos">/reportes/historialTurnos.jsp</template>
+		<template name="autorizacionIngreso">/reportes/autorizacionIngreso.jsp</template>
+		<template name="inicioBuscarRecurso">/reportes/buscarRecurso.jsp</template>
+
+		<template name="error">/error/error.jsp</template>
+		<template name="mensaje">/mensaje/mensaje.jsp</template>
+		<template name="temporalReportes">/reportes/tmp/</template>
+		
+		<!-- PLANTILLAS PARA EXPORTAR PANTALLAS  -->
+		<!-- Recordar el nombre de la plantilla jrxml no debe ser mayor a 31 caracteres -->
+		<template name="reporteAutorizacion-export">/plantillas/Autorizacion.jrxml</template>
+
+		
+	
+
+
+
+	</templates>
+</application>
